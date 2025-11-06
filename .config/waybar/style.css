@@ -1,0 +1,125 @@
+* {
+  /* General taskbar font, I like maple mono ^-^*/
+  font-family: Maple Mono;
+  border-radius: 8;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  /* Linear gradients are used because it makes less harsh rounded border radius, gtk bug :p */
+  background-image: linear-gradient(to bottom, #161212 100%);
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio,
+#custom-restart-waybar,
+#custom-reboot,
+#custom-shutdown,
+#custom-notification {
+  background-image: linear-gradient(to bottom, #2b2323 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #d8cab8;
+
+  border-style: none;
+  transition-duration: 120ms;
+
+  font-weight: bold;
+}
+
+#custom-applauncher:hover,
+#pulseaudio:hover,
+#custom-notification:hover,
+#custom-restart-waybar:hover,
+#custom-reboot:hover,
+#custom-shutdown:hover {
+  background-image: linear-gradient(to bottom, #dd4a4c 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+#custom-applauncher,
+#custom-restart-waybar,
+#custom-reboot {
+  font-weight: bold;
+  transition-duration: 120ms;
+  margin-right: 6px;
+}
+
+#custom-shutdown {
+  font-weight: bold;
+  transition-duration: 120ms;
+  margin-right: 6px;
+  font-size: 25px;
+}
+
+#tray menu {
+  background-color: #141216;
+  color: #d8cab8;
+  margin: 0px;
+}
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #2b2323 100%);
+
+  margin: 0px;
+  color: #d8cab8;
+  border-radius: 0px;
+  border-style: solid;
+  border-color: #27232b;
+  border: none;
+}
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom, #2b2323 100%);
+  color: #e40003;
+  font-weight: bold;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #d8cab8;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #dd4a4c;
+}
+#workspaces button.focused {
+  color: #dd4a4c;
+  font-weight: bold;
+}
+#workspaces button.active {
+  color: #dd4a4c;
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #fcb167;
+}
+
+#battery {
+  background-color: #222222;
+  color: #1d2021;
+}
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #1d2021;
+  background-color: #fc4649;
+}
