@@ -1,4 +1,4 @@
-sudo pacman -S code wofi waybar nautilus kitty dconf dconf-editor sunsetr swaync noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
+sudo pacman -S code wofi waybar nautilus kitty dconf dconf-editor swaync noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
 cp -r MapleMono-TTF /usr/share/fonts/MapleMono-TTF && \
 fc-cache -f -v && \
 cp -r wallpapers ~/Pictures/wallpapers
