@@ -1,9 +1,9 @@
-sudo pacman -S gimp steam code wofi waybar nautilus kitty dconf dconf-editor hyprsunset swaync pipewire-alsa noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
-alias vi=vim && \
-cp -r MapleMono-TTF /usr/share/fonts/MapleMono-TTF && \
+sudo pacman -S gimp nemo code wofi waybar kitty dconf dconf-editor hyprsunset swaync pipewire-alsa noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
+sudo cp -r MapleMono-TTF /usr/share/fonts/MapleMono-TTF && \
 fc-cache -f -v && \
-cp -r .config ~/config && \
-cp -r wallpapers ~/Pictures/wallpapers && \
+cp -r .config ~/ && \
+mkdir ~/Pictures && \
+cp -r wallpapers ~/Pictures/ && \
 sudo cp fnmode.service /etc/systemd/system/fnmode.service && sudo systemctl enable fnmode.service && sudo systemctl start fnmode.service && \
 cp -r icons ~/.local/share/icons && \
 sudo pacman -S --needed git base-devel && \
