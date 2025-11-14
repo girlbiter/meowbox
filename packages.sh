@@ -11,6 +11,6 @@ sudo pacman -S --needed git base-devel && \
 git clone https://aur.archlinux.org/yay.git && \
 cd yay && \
 makepkg -si && \
-yay -S rose-pine-hyprcursor vesktop bolt-launcher heroic-games-launcher-bin && \
+yay -S rose-pine-hyprcursor vesktop bolt-launcher heroic-games-launcher-bin downgrade && \
 gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux && \
 gsettings set org.gnome.desktop.interface gtk-theme "diinki-retro-dark"
