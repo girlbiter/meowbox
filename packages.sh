@@ -1,4 +1,5 @@
-sudo pacman -S hyprpaper gimp nautilus code wofi waybar kitty dconf dconf-editor hyprsunset swaync pipewire-alsa noto-fonts noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
+sudo cp pacman.conf /etc/pacman.conf && \
+sudo pacman -S steam hyprpaper gimp nautilus code wofi waybar kitty dconf dconf-editor hyprsunset swaync pipewire-alsa noto-fonts noto-fonts-emoji otf-font-awesome woff2-font-awesome ttf-jetbrains-mono ttf-noto-nerd && \
 sudo cp -r MapleMono-TTF /usr/share/fonts/MapleMono-TTF && \
 fc-cache -f -v && \
 cp -r .config ~/ && \
