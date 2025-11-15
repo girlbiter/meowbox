@@ -13,4 +13,6 @@ cd yay && \
 makepkg -si && \
 yay -S rose-pine-hyprcursor vesktop bolt-launcher heroic-games-launcher-bin downgrade && \
 gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux && \
-gsettings set org.gnome.desktop.interface gtk-theme "diinki-retro-dark"
+gsettings set org.gnome.desktop.interface gtk-theme "diinki-retro-dark" && \
+sudo pacman -R hyprland-guiutils hyprland && \
+sudo downgrade hyprland-qtutils hyprland
