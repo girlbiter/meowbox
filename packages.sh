@@ -11,8 +11,9 @@ sudo pacman -S --needed git base-devel && \
 git clone https://aur.archlinux.org/yay.git && \
 cd yay && \
 makepkg -si && \
-yay -S rose-pine-hyprcursor vesktop bolt-launcher heroic-games-launcher-bin downgrade && \
+yay -S rose-pine-hyprcursor vesktop bolt-launcher heroic-games-launcher-bin nautilus-open-any-terminal downgrade && \
 gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux && \
 gsettings set org.gnome.desktop.interface gtk-theme "diinki-retro-dark" && \
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty && \
 sudo pacman -R hyprland-guiutils hyprland && \
 sudo downgrade hyprland-qtutils hyprland
