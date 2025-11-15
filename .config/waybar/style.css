@@ -59,6 +59,10 @@ window#waybar {
   margin-right: 6px;
 }
 
+#custom-applauncher {
+  font-size: 20px;
+}
+
 #custom-shutdown {
   font-weight: bold;
   transition-duration: 120ms;
